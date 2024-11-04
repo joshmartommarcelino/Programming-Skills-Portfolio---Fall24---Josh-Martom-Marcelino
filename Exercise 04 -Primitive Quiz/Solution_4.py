@@ -79,4 +79,5 @@ Question_10 = Question_10.lower()
 if Question_10 == "stockholm":
       print("You are Correct")
 else:
-      print("You are Wrong")
+      print("You are Wrong") 
+print("Quiz Completed")
