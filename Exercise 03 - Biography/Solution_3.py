@@ -32,4 +32,3 @@ Biography = {
 print(f"Your Name is: {Biography['Name']}\nYour Hometown is: {Biography['Hometown']}\nYour Age is: {Biography['Age']}")
 
 
-
