@@ -11,6 +11,8 @@
 #Ignore Capitalization: Modify your program to accept answers regardless of the capitalization (e.g., "paris", "Paris", and "PaRis" should all be considered correct).
 #Multiple Questions: Extend the program into a quiz that asks for the capitals of 10 European countries. Provide feedback for each question.
 
+# Solution 1:
+
 score = 0
 
 Question_1 = (input("1.What is the capital of France: "))
@@ -93,3 +95,32 @@ if Question_10 == "stockholm":
 else:
       print("You are Wrong") 
 print(f"Quiz Completed! Your score is: {score}")
+
+# Solution 2: 
+
+def quiz():
+    questions = {
+        "1. What is the capital of France? ": "Paris",
+        "2. What is the capital of Germany? ": "Berlin",
+        "3. What is the capital of Italy? ": "Rome",
+        "4. What is the capital of Spain? ": "Madrid",
+        "5. What is the capital of Portugal? ": "Lisbon",
+        "6. What is the capital of Sweden? ": "Stockholm",
+        "7. What is the capital of Norway? ": "Oslo",
+        "8. What is the capital of Denmark? ": "Copenhagen",
+        "9. What is the capital of Finland? ": "Helsinki",
+        "10. What is the capital of Greece? ": "Athens"
+    }
+
+    score = 0
+    for question, answer in questions.items():
+        user_answer = input(question).lower()
+        if user_answer == answer.lower():
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect. The answer is:", answer)
+
+    print("Your final score is:", score, "out of 10")
+
+quiz()
