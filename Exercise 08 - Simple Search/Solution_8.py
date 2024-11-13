@@ -8,9 +8,9 @@
 
 names = ["Jake" "Zac", "Ian", "Ron", "Sam", "Dave"]
 
-what_is_your_name_bro = (input("What is the name you are looking for~?: "))
+what_is_your_name_bro = (input("What is the name that you are looking for~?: "))
 
 if what_is_your_name_bro in names:
-    print(f"The name '{what_is_your_name_bro}' is in the list bro!")
+    print(f"The name '{what_is_your_name_bro}' is in the list!")
 else:
-    print(f"The name '{what_is_your_name_bro}' is not in the list bro.")
+    print(f"The name '{what_is_your_name_bro}' is not in the list.")
